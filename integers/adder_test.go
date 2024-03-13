@@ -6,8 +6,8 @@ import (
 )
 
 func TestAdder(t *testing.T) {
-	sum := Add(2, 3)
-	expected:= 5
+	sum := Add(3, 3)
+	expected := 6
 
 	if sum != expected {
 		t.Errorf("expected '%d' but got '%d'", expected, sum)
@@ -15,7 +15,7 @@ func TestAdder(t *testing.T) {
 }
 
 func ExampleAdd() {
-	sum := Add(1, 5)
+	sum := Add(2, 3)
 	fmt.Println(sum)
-	// Output: 6
+	// Output: 5
 }
